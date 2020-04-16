@@ -1,0 +1,4 @@
+db address: http://localhost:8081/console
+jdbc, user, pass info : application.properties
+
+rest address http://localhost:8081/list
