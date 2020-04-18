@@ -1,11 +1,26 @@
 package com.dl.project.old;
 
+import lombok.Builder;
+import lombok.Data;
+
+import javax.persistence.*;
+import javax.persistence.Entity;
 import java.util.UUID;
 
+@Data
+@Builder
+@Entity
+@Table
 public class RawDatabaseDetail   {
+    @Id
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     UUID id;
+    @Column
     String name;
+    @Column
     String value;
+    @Column
     UUID parentId;
 
 
